@@ -2945,7 +2945,9 @@ class FeedBackStore {
     }
     retrieveFeedbacks() {
         const feedbacks = JSON.parse(localStorage.getItem(this.feedbackKey));
-        return [...this.getDefaultFeedback(), ...feedbacks];
+        if (!!feedbacks && feedbacks.length)
+            return [...this.getDefaultFeedback(), ...feedbacks];
+        return [...this.getDefaultFeedback()];
     }
     retrieveArtFeedbacks(ar) {
         return this.retrieveFeedbacks().filter(f => f.articleID === ar.id);

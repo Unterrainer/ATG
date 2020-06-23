@@ -5841,7 +5841,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "retrieveFeedbacks",
         value: function retrieveFeedbacks() {
           var feedbacks = JSON.parse(localStorage.getItem(this.feedbackKey));
-          return [].concat(_toConsumableArray(this.getDefaultFeedback()), _toConsumableArray(feedbacks));
+          if (!!feedbacks && feedbacks.length) return [].concat(_toConsumableArray(this.getDefaultFeedback()), _toConsumableArray(feedbacks));
+          return _toConsumableArray(this.getDefaultFeedback());
         }
       }, {
         key: "retrieveArtFeedbacks",
