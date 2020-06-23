@@ -1385,7 +1385,7 @@ class InitComponent {
     }
 }
 InitComponent.ɵfac = function InitComponent_Factory(t) { return new (t || InitComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"])); };
-InitComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InitComponent, selectors: [["app-init"]], decls: 11, vars: 0, consts: [[1, "container"], [1, "title"], [1, "logo"], ["src", "../../assets/logo.png"], [1, "button-container"], [1, "button", "login", 3, "click"], [1, "button", "register", 3, "click"]], template: function InitComponent_Template(rf, ctx) { if (rf & 1) {
+InitComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: InitComponent, selectors: [["app-init"]], decls: 11, vars: 0, consts: [[1, "container"], [1, "title"], [1, "logo"], ["src", "../assets/logo.png"], [1, "button-container"], [1, "button", "login", 3, "click"], [1, "button", "register", 3, "click"]], template: function InitComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "ATG");
